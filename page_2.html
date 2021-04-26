@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='page_2.css'>
+    <script src='page_2.js' defer></script>
+    <title>Nutrizione Online</title>
+</head>
+<body>
+    <section>
+        <h1>Benvenuti nel nostro servizio di nutrizione online!</h1>
+        <div>Questo servizio permette di calcolare le calorie di singoli alimenti, di ricette ed anche di interi menù.</div>
+        <div>Inserisci nell'apposita barra di ricerca il singolo alimento(o il singolo ingrediente), 
+             specificando prima la quantità(in grammi) e poi l'alimento.<br>
+             Esempio: 100g pollo<br>
+             N.B. In caso di errore controlla meglio la sintassi o scrivi in Inglese(seleziona ENG dal menù a tendina).
+        </div>
+        <div>Premi 'Aggiungi'(o clicca 'Invio') per aggiungere l'alimento alla lista.</div>
+        <div>Quando hai terminato la lista degli ingredienti, premi 'Calcola' per calcolare le calorie
+             o 'Rimuovi' per cancellare la lista.
+        </div>
+    </section>
+    <form>Alimento: 
+        <input type='text' id='barra'>
+        <input type='submit' id='submit' value='Aggiungi'>
+        <select name="lingua" id="lingua">
+            <option value='ITA'>ITA</option>
+            <option value='ENG'>ENG</option>
+        </select>
+    </form>
+    <div class='lista'>
+        <ol>
+        </ol>
+    </div>
+    <div class='buttons'>
+        <button id='calculate'>Calcola</button>
+        <button id='remove'>Rimuovi</button>
+    </div>
+    <div id='output'>
+        <h2>Analisi Nutrizionale</h2>
+        <div class='line'></div>
+        <div class='contents'></div>
+    </div>
+    <footer>Powered by Gerlando Maria Cacciatore, Matricola O46002238</footer>
+</body>
+
+</html>
